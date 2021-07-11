@@ -1,0 +1,7 @@
+<div>
+  <p>The items in here are ordered using ngComponentOutlet and a sorted array of objects</p>
+  <ng-container *ngFor="let item of orders">
+    <ng-container *ngComponentOutlet="item.component"></ng-container>
+  </ng-container>
+</div>
+
