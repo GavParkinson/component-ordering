@@ -5,3 +5,4 @@ export * from './feature-d/feature-d.component';
 export * from './feature-container/feature-container.component';
 export * from './feature-container-flex/feature-container-flex.component';
 export * from './introduction/introduction.component';
+export * from './profile/index';

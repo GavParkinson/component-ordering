@@ -7,8 +7,13 @@ import {
   FeatureCComponent,
   FeatureDComponent,
   FeatureContainerComponent,
-  FeatureContainerFlexComponent
+  FeatureContainerFlexComponent,
+  GuestCardComponent,
+  UserCardComponent,
+  ProfileComponent,
+  ProfileHostDirective
  } from './index';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +23,11 @@ import {
     FeatureCComponent,
     FeatureDComponent,
     FeatureContainerComponent,
-    FeatureContainerFlexComponent
+    FeatureContainerFlexComponent,
+    GuestCardComponent,
+    UserCardComponent,
+    ProfileComponent,
+    ProfileHostDirective
   ],
   imports: [
     CommonModule
@@ -26,7 +35,9 @@ import {
   exports: [
     IntroductionComponent,
     FeatureContainerComponent,
-    FeatureContainerFlexComponent
+    FeatureContainerFlexComponent,
+    ProfileComponent,
+    ProfileHostDirective
   ]
 })
 export class FeaturesModule { }
