@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Item } from '../item';
 
 @Component({
   selector: 'app-feature-b',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeatureBComponent implements OnInit {
 
+  @Input() data!: Item;
   constructor() { }
 
   ngOnInit(): void {

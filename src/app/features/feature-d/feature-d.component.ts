@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Item } from '../item';
 
 @Component({
   selector: 'app-feature-d',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feature-d.component.scss']
 })
 export class FeatureDComponent implements OnInit {
-
+  @Input() data!: Item;
   constructor() { }
 
   ngOnInit(): void {

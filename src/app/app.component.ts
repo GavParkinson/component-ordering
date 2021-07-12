@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FeatureAComponent, FeatureBComponent, FeatureCComponent, FeatureDComponent, IntroductionComponent } from './features';
+import { FeatureAComponent, FeatureBComponent, FeatureCComponent, FeatureDComponent, IntroductionComponent, Item } from './features';
+import { ComponentDataType } from './models/component-data-type';
 import { ISortedOrder } from './models/sorted-order';
 
 @Component({
@@ -25,4 +26,12 @@ export class AppComponent {
     {index: 1, component: FeatureCComponent},
     {index: 4, component: FeatureDComponent},
   ].sort((a,b) => a.index > b.index ? 1 : -1);
+
+  itemsWithData: ComponentDataType[] = [
+    {name: 'introduction', data: new Item(1,2,'This is an introduction','Some more intro here','Intro again')},
+    {name: 'featureA', data: new Item(2,5,'one','a','alpha')},
+    {name: 'featureB', data: new Item(3,3,'two','b','bravo')},
+    {name: 'featureC', data: new Item(4,1,'three','c','charlie')},
+    {name: 'featureD', data: new Item(5,4,'four','d','delta')},
+  ].sort((a,b) => a.data.index > b.data.index ? 1 : -1);
 }

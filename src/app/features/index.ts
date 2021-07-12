@@ -4,5 +4,8 @@ export * from './feature-c/feature-c.component';
 export * from './feature-d/feature-d.component';
 export * from './feature-container/feature-container.component';
 export * from './feature-container-flex/feature-container-flex.component';
+export * from './feature-container-dynamic/feature-container-dynamic.component'
 export * from './introduction/introduction.component';
+export * from './comp-type';
+export * from './item';
 export * from './profile/index';

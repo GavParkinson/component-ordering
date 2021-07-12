@@ -1,0 +1,13 @@
+<div>
+  <p>The items in here are dynamically populated and also allow passing data</p>
+  <ng-container *ngFor="let cmp of components">
+    <ng-container>
+      <app-introduction [data]="cmp.data" *ngIf="cmp.component.selector === 'app-introduction'"></app-introduction>
+      <app-feature-a [data]="cmp.data" *ngIf="cmp.component.selector === 'app-feature-a'"></app-feature-a>
+      <app-feature-b [data]="cmp.data" *ngIf="cmp.component.selector === 'app-feature-b'"></app-feature-b>
+      <app-feature-c [data]="cmp.data" *ngIf="cmp.component.selector === 'app-feature-c'"></app-feature-c>
+      <app-feature-d [data]="cmp.data"*ngIf="cmp.component.selector === 'app-feature-d'"></app-feature-d>
+    </ng-container>
+  </ng-container>
+</div>
+

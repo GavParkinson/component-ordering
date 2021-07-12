@@ -8,12 +8,12 @@ import {
   FeatureDComponent,
   FeatureContainerComponent,
   FeatureContainerFlexComponent,
+  FeatureContainerDynamicComponent,
   GuestCardComponent,
   UserCardComponent,
   ProfileComponent,
   ProfileHostDirective
  } from './index';
-
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import {
     GuestCardComponent,
     UserCardComponent,
     ProfileComponent,
-    ProfileHostDirective
+    ProfileHostDirective,
+    FeatureContainerDynamicComponent
   ],
   imports: [
     CommonModule
@@ -36,6 +37,7 @@ import {
     IntroductionComponent,
     FeatureContainerComponent,
     FeatureContainerFlexComponent,
+    FeatureContainerDynamicComponent,
     ProfileComponent,
     ProfileHostDirective
   ]
